@@ -210,7 +210,7 @@ msgstr "ページを追加する。"
 #: views/admin/index/edit.php:4
 #, php-format
 msgid "Simple Pages | Edit \"%s\""
-msgstr "Simple Pages | 編集"
+msgstr "Simple Pages | \"%s\"を編集"
 
 #: views/admin/index/edit.php:40
 #, php-format
