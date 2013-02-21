@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the Omeka package.
 # 
 # Translators:
+# Masaki Hidano <MasaGon@info-lounge.jp>, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: Omeka\n"
@@ -27,14 +28,17 @@ msgstr "Simple Page"
 
 #: config_form.php:3
 msgid "Filter User Input For Page Content?"
-msgstr "ユーザーのページコンテンツの入力をフィルターしますか？"
+msgstr "ページコンテンツをフィルターする"
 
 #: config_form.php:9
 msgid ""
 "If checked, this plugin will filter all simple pages using the HTML filters "
 "set on the security settings page. PHP code will not be allowed in the "
 "content of pages if this box is checked."
-msgstr "このオプションがオンの場合、全てのSimple Pagesは、セキュリティ設定ページで指定されたHTMLフィルターを用いてフィルタリングされます。また、ページコンテンツ内のPHPコードは許可されません。"
+msgstr ""
+"このオプションがオンの場合、全てのSimple Pagesは「セキュリティ設定」で指定された"
+"HTMLフィルターを用いてフィルタリングされます。この場合、ページコンテンツ内で"
+"PHPコードは使用できません"
 
 #: controllers/IndexController.php:65
 msgid "Name and heading for the page (required)"
@@ -49,157 +53,164 @@ msgid ""
 "The slug is the part of the URL for this page. A slug will be created "
 "automatically from the title if one is not entered. Letters, numbers, "
 "underscores, dashes, and forward slashes are allowed."
-msgstr "スラッグはこのページのURLの一部となります。スラッグが指定されない場合は、タイトルから自動的に生成されます。アルファベット、数字、アンダースコア、ダッシュ、スラッシュが使用可能です。"
+msgstr ""
+"スラッグはこのページのURLの一部となります。スラッグが指定されない場合は、"
+"タイトルから自動的に生成されます。アルファベット、数字、アンダースコア、"
+"ダッシュ、スラッシュが使用可能です。"
 
 #: controllers/IndexController.php:91
 msgid "Use HTML editor?"
-msgstr "HTMLエディターを使用しますか？"
+msgstr "HTMLエディターを使用する"
 
 #: controllers/IndexController.php:93
 msgid ""
 "Check this to add an HTML editor bar for easily creating HTML. <strong>PHP "
 "code will not be read in pages if this option is checked.</strong>"
 msgstr ""
+"HTMLを簡単に生成できるようHTMLエディターを表示します。<strong>このオプションが"
+"チェックされた時には、PHPコードは表示が出来ません。</strong>"
 
 #: controllers/IndexController.php:106
 msgid "Text"
-msgstr ""
+msgstr "テキスト"
 
 #: controllers/IndexController.php:108
 msgid ""
 "Add content for page, including HTML markup and PHP code (if the HTML editor"
 " is not checked above)."
 msgstr ""
+"ページの内容を入力して下さい。HTMLマークアップとPHPコード（HTMLエディターを"
+"使用しない場合）を含めることが出来ます。"
 
 #: controllers/IndexController.php:120
 msgid "Parent"
-msgstr ""
+msgstr "親"
 
 #: controllers/IndexController.php:121
 msgid "The parent page"
-msgstr ""
+msgstr "このページの親となるページ"
 
 #: controllers/IndexController.php:129
 msgid "Order"
-msgstr ""
+msgstr "順序"
 
 #: controllers/IndexController.php:131
 msgid "The order of the page relative to the other pages with the same parent"
-msgstr ""
+msgstr "同じ親ページを持つページの中での表示順"
 
 #: controllers/IndexController.php:143
 msgid "Publish this page?"
-msgstr ""
+msgstr "公開"
 
 #: controllers/IndexController.php:144
 msgid "Checking this box will make the page public"
-msgstr ""
+msgstr "公開するにはこのオプションをチェック"
 
 #: controllers/IndexController.php:164
 #, php-format
 msgid "The page \"%s\" has been added."
-msgstr ""
+msgstr "\"%s\"ページが追加されました。"
 
 #: controllers/IndexController.php:166
 #, php-format
 msgid "The page \"%s\" has been edited."
-msgstr ""
+msgstr "\"%s\"ページが編集されました。"
 
 #: controllers/IndexController.php:184
 #, php-format
 msgid "The page \"%s\" has been deleted."
-msgstr ""
+msgstr "\"%s\"ページが削除されました。"
 
 #: helpers/SimplePageFunctions.php:121
 msgid "Home"
-msgstr ""
+msgstr "ホーム"
 
 #: helpers/SimplePageFunctions.php:166
 msgid "Main Page (No Parent)"
-msgstr ""
+msgstr "メインページ（親なし）"
 
 #: models/SimplePagesPage.php:60
 msgid "The page must be given a title."
-msgstr ""
+msgstr "ページにはタイトルが必要です。"
 
 #: models/SimplePagesPage.php:64
 msgid "The title for your page must be 255 characters or less."
-msgstr ""
+msgstr "ページのタイトルは255文字以内にする必要があります。"
 
 #: models/SimplePagesPage.php:68
 msgid "The title is already in use by another page. Please choose another."
-msgstr ""
+msgstr "このタイトルは他のページで使用されています。変更して下さい。"
 
 #: models/SimplePagesPage.php:72
 msgid "The page must be given a valid slug."
-msgstr ""
+msgstr "このページには有効なスラッグを指定する必要があります。"
 
 #: models/SimplePagesPage.php:76
 msgid "The slug for your page must not be a forward slash."
-msgstr ""
+msgstr "スラッグにはスラッシュを含めることは出来ません。"
 
 #: models/SimplePagesPage.php:80
 msgid "The slug for your page must be 255 characters or less."
-msgstr ""
+msgstr "ページのスラッグは255文字以内にする必要があります。"
 
 #: models/SimplePagesPage.php:84
 msgid "The slug is already in use by another page. Please choose another."
-msgstr ""
+msgstr "このスラッグは他のページで使用されています。変更して下さい。"
 
 #: models/SimplePagesPage.php:88
 msgid "The order must be an integer greater than or equal to 0."
-msgstr ""
+msgstr "順序には0以上の整数を入力して下さい。"
 
 #: views/admin/index/add.php:5
 msgid "Simple Pages | Add Page"
-msgstr ""
+msgstr "Simple Pages | ページの追加"
 
 #: views/admin/index/browse-hierarchy-page.php:16
 #: views/admin/index/browse-list.php:33
 #, php-format
 msgid "<strong>%1$s</strong> on %2$s"
-msgstr ""
+msgstr "<strong>%1$s</strong> on %2$s"
 
 #: views/admin/index/browse-hierarchy-page.php:20
 msgid "Published"
-msgstr ""
+msgstr "公開中"
 
 #: views/admin/index/browse-hierarchy-page.php:20
 msgid "Not Published"
-msgstr ""
+msgstr "非公開"
 
 #: views/admin/index/browse-list.php:7
 msgid "Last Modified"
-msgstr ""
+msgstr "最終更新日時"
 
 #: views/admin/index/browse.php:3
 msgid "Simple Pages | Browse"
-msgstr ""
+msgstr "Simple Pages | 閲覧"
 
 #: views/admin/index/browse.php:9
 msgid "List View"
-msgstr ""
+msgstr "リスト表示"
 
 #: views/admin/index/browse.php:12
 msgid "Hierarchy View"
-msgstr ""
+msgstr "階層表示"
 
 #: views/admin/index/browse.php:17
 msgid "Add a Page"
-msgstr ""
+msgstr "ページの追加"
 
 #: views/admin/index/browse.php:19
 msgid "There are no pages."
-msgstr ""
+msgstr "ページが登録されていません。"
 
 #: views/admin/index/browse.php:19
 msgid "Add a page."
-msgstr ""
+msgstr "ページを追加する。"
 
 #: views/admin/index/edit.php:4
 #, php-format
 msgid "Simple Pages | Edit \"%s\""
-msgstr ""
+msgstr "Simple Pages | 編集"
 
 #: views/admin/index/edit.php:40
 #, php-format
@@ -207,3 +218,5 @@ msgid ""
 "This page was created by <strong>%1$s</strong> on %2$s, and last modified by"
 " <strong>%3$s</strong> on %4$s."
 msgstr ""
+"このページは<strong>%1$s</strong>によって%2$sに作成され、"
+"<strong>%3$s</strong>によって%4$sに最終更新されました。"
